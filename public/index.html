@@ -82,16 +82,11 @@
 			
 			init: function() {
 
-				game.gameSequence();
-			},
-
-			gameSequence: function() {
-
 				var timer = setInterval(function() {
 					
-					if (game.counter > 3) {
+					if (game.counter > 6) {
 
-						// start new level
+						// start new level at faster speed
 						clearInterval(timer);
 						game.levelUp();
 						game.speedUp();
@@ -102,7 +97,7 @@
 
 					} else {
 
-						// animate random mole
+						// fade random mole in + out
 						game.getRandomMole();
 
 						// add one to counter
@@ -141,7 +136,7 @@
 
 				// add one to score
 				game.score++;
-				console.log(game.score);
+				console.log('Score: ' + game.score);
 
 				// change scoreboard text
 				$('#score').html(game.score);

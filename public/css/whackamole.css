@@ -1,3 +1,5 @@
+/* Generic Grid Parameters */
+
 html {
     box-sizing: border-box;
 }
@@ -12,16 +14,19 @@ html {
     clear: both;
 }
 
+/* Body and game-container styling */
+
 body {
 	color: #fff;
 	background-color: rgb(101, 223, 239);
 	font-family: 'Special Elite', cursive;
-	
 }
 
 #game {
 	margin-left: 100px;
 }
+
+/* Header Styling */
 
 header {
 	font-size: 40px;
@@ -30,6 +35,8 @@ header {
 h1 {
 	margin-bottom: 0;
 }
+
+/* Game grid styling */
 
 .game-info {
 	font-size: 20px;
@@ -58,6 +65,8 @@ h1 {
 	width: 33.3%;
 }
 
+/* Specific mole styling */
+
 .mole {
 	height: 100%;
 	width: 100%;
@@ -70,6 +79,8 @@ h1 {
 .hide {
 	display: none;
 }
+
+/* THE button! */
 
 button {
 	padding: 20px;
